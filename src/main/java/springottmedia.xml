@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id = "series1" class = "com.example.OttMedia.Series" >
+   <constructor-arg name="name"  value="GOT"/>
+   </bean>
+   
+   <bean id = "series2" class = "com.example.OttMedia.Series" >
+   <constructor-arg name="name"  value="Office"/>
+   </bean>
+   
+   <bean id = "movie1" class = "com.example.OttMedia.Movies" >
+   <constructor-arg name="name"  value="hulk"/>
+   </bean>
+   
+   <bean id = "movie2" class = "com.example.OttMedia.Movies" >
+   <constructor-arg name="name"  value="batman"/>
+   </bean>
+   
+   <bean id="sub" class = "com.example.OttMedia.Subscribers">
+   </bean>
+   <bean id="ec" class="com.example.OttMedia.Endcredits">
+   	<constructor-arg index="0" value="batman"/>
+   </bean>
+   
+  </beans>
